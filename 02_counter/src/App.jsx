@@ -5,16 +5,15 @@ import './App.css'
 
 function App() {
   const [counter, setCounter] = useState(5)
-  // let counter = 7
 
   const incrementor = () => {
     setCounter(counter + 1)
-    console.log(counter)
+    // console.log(counter)
   }
-  
+
   const decrementor = () => {
     setCounter(counter - 1)
-    console.log(counter)
+    // console.log(counter)
   }
 
   if (counter < 0) {
