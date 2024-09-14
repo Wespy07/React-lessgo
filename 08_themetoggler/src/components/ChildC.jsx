@@ -2,7 +2,9 @@ import React from 'react'
 
 function ChildC() {
   return (
-    <div>ChildC</div>
+    <>
+    <h1>I am inside childC</h1>
+    </>
   )
 }
 
