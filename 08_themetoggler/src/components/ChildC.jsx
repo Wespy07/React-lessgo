@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../App'
 
 function ChildC() {
+  const {theme, setTheme} = useContext(ThemeContext)
+
+  function toggleTheme(){
+    (theme==='Light') ? setTheme('Dark') : setTheme('Light')
+  }
+
   return (
     <>
-    <h1>I am inside childC</h1>
+    <button onClick={toggleTheme}>Toggle Theme: {theme}</button>
     </>
   )
 }
