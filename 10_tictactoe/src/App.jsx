@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <h1>Tic Tac Toe</h1>
+      <h1 className='title'>Tic Tac Toe</h1>
       < Board />
     </>
   )

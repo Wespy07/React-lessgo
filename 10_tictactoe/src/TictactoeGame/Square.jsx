@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Square() {
-  return (
-    <div className='board-square'>
-        <h4>X</h4>
-    </div>
-  )
+function Square(props) {
+    return (
+        <div onClick={props.onClick} className='board-square'>
+            <h4 className='x-or-o'>{props.value}</h4>
+        </div>
+    )
 }
 
 export default Square
