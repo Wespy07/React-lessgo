@@ -1,2 +1,2 @@
-const start = () => confetti.start()
-const stop = () => confetti.stop()
+export const start = () => confetti.start()
+export const stop = () => confetti.stop()

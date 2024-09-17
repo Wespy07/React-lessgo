@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Square from './Square'
-// import{ start, stop } from '../confetti/show-confetti'
+import{ start, stop } from '../confetti/show-confetti'
 
 function Board() {
 
