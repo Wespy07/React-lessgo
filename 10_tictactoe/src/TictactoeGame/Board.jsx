@@ -54,6 +54,7 @@ function Board() {
 
   const handleReset = () => {
     setState(Array(9).fill(null));
+    stop()
   };
 
   return (
