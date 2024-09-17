@@ -63,3 +63,10 @@ body {
 .reset-btn:hover{
     background-color: #67478d;
 }
+
+@media screen and (max-width: 500px) {
+    .winner-box{
+        font-size: 28px;
+    }
+  }
+  
