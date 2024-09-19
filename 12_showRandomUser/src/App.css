@@ -1,0 +1,83 @@
+.main-container {
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #272727;
+    max-width: 500px;
+}
+
+.img-cont,
+.loader-img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.user-image {
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: #008d86 0px 0px 20px;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.loader-container {
+    margin: 20px;
+    width: 500px;
+    height: 450px;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #272727;
+}
+
+.loader-image {
+    width: 150px;
+    height: 150px;
+    background-color: #585858;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.loader-name {
+    margin: auto;
+    height: 30px;
+    width: 60%;
+    background-color: #585858;
+    margin-top: 15px;
+}
+
+.loader-username,
+.loader-dob,
+.loader-age,
+.loader-number,
+.loader-mail,
+.loader-location {
+    margin: auto;
+    height: 20px;
+    width: 95%;
+    background-color: #585858;
+    margin-top: 15px;
+}
+
+.refresh-btn{
+    text-align: center;
+}
+.refresh-btn button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #008d86;
+    cursor: pointer;
+}
+.refresh-btn button:hover{
+    background-color: #044d49;
+}
