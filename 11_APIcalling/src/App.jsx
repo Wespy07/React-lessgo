@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import getPosts from './api/jsonPlaceholder'
+import Postcard from './components/Postcard'
 import './App.css'
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
 
   }, [])
   return (
-    <div>
+    <div className='postcard'>
       {
-        posts ? posts.map((e) => <li>{e.title}</li>) : <h3>Loading</h3>
+        posts ? posts.map((e) => < Postcard title={e.title} body={e.body}/>) : <h3>Loading</h3>
       }
     </div>
   )
