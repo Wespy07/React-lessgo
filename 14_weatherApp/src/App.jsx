@@ -1,17 +1,18 @@
-import { useState } from 'react'
 import './App.css'
 import Card from './components/card'
 import Input from './components/Input'
 import Button from './components/Button'
+import { useWeather } from './context/Weather'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const weather = useWeather()
+  // console.log(weather)
 
   return (
     <>
     <h1>Weather App</h1>
     < Input placeholder='Search for a city' />
-    < Button value='search' />
+    < Button onClick={() => weather.fetchData()} value='search' />
     < Card />
     </>
   )
