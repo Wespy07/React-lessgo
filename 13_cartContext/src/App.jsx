@@ -12,8 +12,6 @@ function App() {
      <Item title='Laptop' price='80000'/>
      <Item title='Mobile' price='30000'/>
      <Item title='TV' price='40000'/>
-
-
      <Cart/>
     </>
   )
