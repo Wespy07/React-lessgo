@@ -1,3 +1,44 @@
-#root {
-  padding: 1rem 3rem;
+#root{
+  width: 70%;
+  margin: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1rem;
+  border: 2px solid #f02eaa66;
+  border-radius: 7px;
+  margin-top: 13px;
+  transition: all 0.15s linear;
+}
+a:first-child{
+  margin-top: 2rem;
+}
+
+a:hover {
+  box-shadow: #f02eaa66 -5px 5px;
+  
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.post-container {
+  border: 2px solid salmon;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 15px;
+  transition: all 0.15s linear;
+}
+
+.post-container:hover {
+  box-shadow: salmon -5px 5px 7px 1px;
 }
