@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Home() {
 
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState(null)
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
@@ -10,13 +11,15 @@ function Home() {
             .then((data) => setPosts(data))
     }, [])
 
-
     return (
         <div>
-            {
-                posts.map((post) => {
-                   return <li>{post.title}</li>
-                })
+            {   
+                (posts) ? 
+                posts.map((post, i) => {
+                   return <NavLink to={`/post/${post.id}`} key={i}>{post.title}</NavLink>
+                }) : <div className='loading'>
+                    <h1>Loading...</h1>
+                </div>
             }
         </div>
     )
