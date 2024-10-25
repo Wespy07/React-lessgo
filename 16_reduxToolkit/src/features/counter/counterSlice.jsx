@@ -16,7 +16,9 @@ export const counterSlice = createSlice({
             state.value = 0
         },
         incrementByAmount: (state, action) => {
-            state.value += Number(action.payload)
+            state.value = state.value * Number(action.payload)
+            // below code can be used if you dont want to show the numbers in 'e' format, below code will show them as absolute numbers
+            // state.value = (Number(state.value) * Number(action.payload)).toLocaleString('fullwide', { useGrouping: false });
         },
     },
 })

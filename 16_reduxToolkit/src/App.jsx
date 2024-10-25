@@ -26,7 +26,7 @@ function App() {
       <input
         type="number"
         value={amount}
-        placeholder='Increment by amount'
+        placeholder='Multiplier amount'
         onChange={(e) => setAmount(e.target.value)}
       />
       <button onClick={() => dispatch(incrementByAmount(amount))}>Go</button>
