@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import { useDispatch, useSelector } from 'react-redux' 
+import { fetchTodos } from './slices/todo'
+
 function App() {
-  const [count, setCount] = useState(0)
+  const dispatch = useDispatch()
 
   return (
-    <h2>API Calling in Redux using redux-toolkit</h2>
+    <>
+      <h2>API Calling in Redux using redux-toolkit</h2>
+      <button onClick={e => dispatch(fetchTodos())}>Fetch Todos</button>
+    </>
   )
 }
 
